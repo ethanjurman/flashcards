@@ -1,0 +1,45 @@
+<!-- author Ethan Jurman -->
+<html>
+<head>
+  <title> flashcards are cool! </title>
+  <!-- jquery -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <!-- loading my flashcard script -->
+  <script src="js/flashcards.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="top">
+    <h1> Flashcards! </h1>
+  </div>
+  <div class="list-show">
+    <table id="words-list">
+      <tr>
+        <th>
+          Words
+        </th>
+        <th>
+          Definitions
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" name="word">
+        </td>
+        <td class="definitions">
+          <textarea></textarea>
+          <span class="close"> x </span>
+        </td>
+      </tr>
+    </table>
+    <button class="list-show add-word" onclick="addWord()"> add card </button>
+    <button class="list-show" onclick="toggleList()"> hide </button>
+  </div>
+  <button class="list-show" onclick="toggleList()" style="display:none"> show </button>
+  <div class="buttons">
+    <button onclick="makeCards()"> make cards </button>
+  </div>
+  <div id="card-area"/>
+</body>
+</html>
