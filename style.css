@@ -1,0 +1,55 @@
+html * {
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
+}
+h1 {
+  font-size: 30px;
+}
+button {
+  border : 0px;
+  cursor : pointer;
+  border-radius : 5px;
+}
+.list-show {
+  background : rgb(160, 160, 240);
+  border-radius : 5px;
+}
+table.list-show {
+  padding : 10px;
+}
+button.list-show {
+  width : 100%;
+}
+button.list-show:hover {
+  background : rgb(190, 190, 255);
+}
+textarea {
+  width: calc(100% - 15px);
+}
+td.definitions {
+  width: 100%;
+}
+.card {
+  border : 5px solid black;
+  border-radius : 5px;
+  width : 200px;
+  height : 200px;
+  vertical-align : middle;
+  text-align : center;
+  float : left;
+  cursor : pointer;
+  margin : 10px;
+}
+.close {
+  float : right;
+  cursor : pointer;
+}
+.close:hover {
+  color : gray;
+}
+.word {
+  font-size : 32px;
+}
+.definition {
+  font-size : 24px;
+}
