@@ -1,5 +1,5 @@
 html * {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 22px;
 }
 h1 {
@@ -27,7 +27,7 @@ textarea {
   width: calc(100% - 15px);
 }
 td.definitions {
-  width: 100%;
+  width: 50%;
 }
 .card {
   border : 5px solid black;
@@ -50,6 +50,6 @@ td.definitions {
 .word {
   font-size : 32px;
 }
-.definition {
+.definition .card {
   font-size : 24px;
 }
