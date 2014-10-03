@@ -6,7 +6,7 @@ function addWord() {
   var cell2 = row.insertCell(1);
 
   cell1.innerHTML = '<input type="text" name="word">';
-  cell2.innerHTML = '<textarea class="definitions"> </textarea><span class="close"> x </span>';
+  cell2.innerHTML = '<textarea></textarea><span class="close"> x </span>';
 }
 
 function toggleList() {
@@ -42,8 +42,8 @@ function makeCards() {
 function Card( word, definition ) {
   this.word = word;
   this.definition = definition;
-  this.view = '<div class="click-card-area"> <div class="card word" margin="auto"> ' + this.word + '</div>'
-   + '<div class="card definition" style="display:none"> ' + this.definition + '</div> </div>';
+  this.view = '<div class="click-card-area"><div class="card word" margin="auto"> ' + this.word + '</div>'
+   + '<div class="card definition" style="display:none">' + this.definition + '</div></div>';
 }
 
 $(document).ready(function(){
@@ -51,5 +51,8 @@ $(document).ready(function(){
     $(this).find('.card').each(function(){
       $(this).toggle();
     });
+  });
+  $('body').on('click', '.close', function() {
+    $(this).parent().parent().remove()
   });
 });
